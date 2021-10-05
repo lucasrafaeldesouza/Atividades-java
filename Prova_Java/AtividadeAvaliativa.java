@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class PrimeiraAvaliacao {
+public class AtividadeAvaliativa {
     public static void main(String args[]) {
 
         Scanner scanner = new Scanner(System.in);
