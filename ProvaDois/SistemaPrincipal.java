@@ -11,12 +11,9 @@ public class SistemaPrincipal {
         System.out.println(chefTres.receitas);
 
         // criando nome da padaria e endereco
-        Padaria padariaUm = new Padaria(1, "Padaria Pao Doce Pao", "05/11/2001", 1, "52496783264", "Rua olinda", 746,
-                "Guanabara", "Porto Alegre");
-        Padaria padariaDois = new Padaria(2, "Padaria Srze", "15/02/2005", 2, "52496482265", "Rua paranaue", 456,
-                "Humaita", "Rio de janerio");
-        Padaria padariaTres = new Padaria(3, "Padaria ferragem", "16/04/2007", 3, "01562551798", "Rua do irineu", 101,
-                "Rocinha", "Curitiba");
+        Padaria padariaUm = new Padaria(1, "Padaria Pao Doce Pao", "05/11/2001", 1, "52496783264", "Rua olinda", 746,"Guanabara", "Porto Alegre");
+        Padaria padariaDois = new Padaria(2, "Padaria Srze", "15/02/2005", 2, "52496482265", "Rua paranaue", 456,"Humaita", "Rio de janerio");
+        Padaria padariaTres = new Padaria(3, "Padaria ferragem", "16/04/2007", 3, "01562551798", "Rua do irineu", 101,"Rocinha", "Curitiba");
 
         System.out.println(padariaUm.nome);
         System.out.println(padariaDois.nome);
@@ -64,7 +61,6 @@ public class SistemaPrincipal {
         System.out.println("\n");
 
         // Adicionando receita em padaria
-
         padariaUm.adicionarReceita(receitaUm);
         padariaUm.adicionarReceita(receitaDois);
         padariaUm.adicionarReceita(receitaTres);
@@ -88,25 +84,25 @@ public class SistemaPrincipal {
             System.out.println(receita.nome);
         }
 
-        System.out.println("\n Endereço:");
+        System.out.println("\n Endereço: ");
         System.out.println(" \n CEP: " + padariaUm.endereco.cep + " \n Rua: " + padariaUm.endereco.rua + " \n Número: "
                 + padariaUm.endereco.numero + " \n Bairro: " + padariaUm.endereco.bairro + " \n Cidade: "
                 + padariaUm.endereco.cidade);
         System.out.println("\n");
 
-        System.out.println("Padaria Srze:");
+        System.out.println("Padaria Sr Ze: ");
 
         for (Receita receita : padariaDois.receitas) {
             System.out.println(receita.nome);
         }
 
-        System.out.println("\n Endereço:");
+        System.out.println("\n Endereço: ");
         System.out.println(" \n CEP: " + padariaDois.endereco.cep + " \n Rua: " + padariaDois.endereco.rua
                 + " \n Número: " + padariaDois.endereco.numero + " \n Bairro: " + padariaDois.endereco.bairro
                 + " \n Cidade: " + padariaDois.endereco.cidade);
         System.out.println("\n");
 
-        System.out.println("Padaria ferragem:");
+        System.out.println("Padaria ferragem: ");
 
         for (Receita receita : padariaTres.receitas) {
             System.out.println(receita.nome);
@@ -116,7 +112,5 @@ public class SistemaPrincipal {
         System.out.println(" \n CEP: " + padariaTres.endereco.cep + " \n Rua: " + padariaTres.endereco.rua
                 + " \n Número: " + padariaTres.endereco.numero + " \n Bairro: " + padariaTres.endereco.bairro
                 + " \n Cidade: " + padariaTres.endereco.cidade);
-
     }
-
 }
