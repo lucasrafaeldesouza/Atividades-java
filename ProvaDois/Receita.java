@@ -17,10 +17,9 @@ public class Receita {
         this.numeroEtapas = numeroEtapas;
 
     }
-
     // fim do construtor
+    
     public void adicionarPadaria(Padaria padaria) {
         this.padarias.add(padaria);
-
     }
 }
