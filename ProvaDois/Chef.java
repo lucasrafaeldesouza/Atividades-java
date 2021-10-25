@@ -9,7 +9,6 @@ public class Chef {
     ArrayList<Receita> receitas = new ArrayList<>();
 
     // início do construtor
-
     public Chef(int id, String nome, String cpf, String dataNasc) {
         this.id = id;
         this.nome = nome;
@@ -26,7 +25,5 @@ public class Chef {
         // Adicionar receita(receita)
         Receita receita = new Receita(idReceita, nomeReceita, etapas, numeroEtapas);
         this.receitas.add(receita);
-
     }
-
 }
