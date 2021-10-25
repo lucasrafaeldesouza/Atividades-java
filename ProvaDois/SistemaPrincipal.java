@@ -23,16 +23,13 @@ public class SistemaPrincipal {
         System.out.println(padariaTres.nome);
 
         // Criando receitas para adicionar em chef e padaria
-        Receita receitaUm = new Receita(20, "Pao",
-                "Coloque em uma vasilha os ingredientes, misture bem e depois leve ao forno", 3);
-        Receita receitaDois = new Receita(25, "bolinho de chuva",
-                "misture trigo, açúcar e leve para a panela para fritar", 2);
+        Receita receitaUm = new Receita(20, "Pao","Coloque em uma vasilha os ingredientes, misture bem e depois leve ao forno", 3);
+        Receita receitaDois = new Receita(25, "bolinho de chuva","misture trigo, açúcar e leve para a panela para fritar", 2);
         Receita receitaTres = new Receita(30, "coxinha", "leve ao microondas e esquente", 1);
         Receita receitaQuatro = new Receita(35, "pao de queijo", "leve ao forno e esquente", 1);
         Receita receitaCinco = new Receita(40, "risoles", "coloque recheio na massa e frite", 2);
         Receita receitaSeis = new Receita(45, "churros", "frite os churros em uma panela com oleo", 1);
-        Receita receitaSete = new Receita(50, "bolo de pote",
-                "coloque recheio dentro de um bolo e depois coloque no pote", 2);
+        Receita receitaSete = new Receita(50, "bolo de pote","coloque recheio dentro de um bolo e depois coloque no pote", 2);
         Receita receitaOito = new Receita(55, "bolo caseiro", "misture os ingredientes e depois leve ao forno", 2);
         Receita receitaNove = new Receita(60, "mini pizza", "coloque os ingredientes em uma massa e leve ao forno", 2);
 
