@@ -11,7 +11,6 @@ public class Padaria {
     // inicio do construtor
     public Padaria(int id, String nome, String dataAbertura, int IdEndereco, String cep, String rua, int numero,
             String bairro, String cidade)
-
     {
         this.id = id;
         this.nome = nome;
