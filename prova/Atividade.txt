@@ -1,0 +1,31 @@
+Padaria                          
+        -id
+        -nome
+        -data de abertura
+Endereço 
+        -id
+        -cep
+        -rua
+        -numero
+        -bairro
+        -cidade
+Receita
+        -id
+        -nome
+        -etapas
+        -numero de etapas
+Chef
+        -id
+        -nome
+        -cpf
+        -data nasci               
+- Criação 3 Chef: OK
+- Cada chef 3 receitas: OK
+- Criação 3 padarias com Endereço: 
+- Cada padaria tenha 5 receitas
+
+Padaria N - N Receita
+Padaria 1 - 1 Endereço
+Receita N - 1 Chef
+
+
