@@ -1,38 +1,29 @@
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class Chef {
+public class Chef extends Pessoa {
 
-    int id;
-    String nome;
-    String cpf;
-    String dataNasc;
+    private int id;
+    private String nome;
+    private String cpf;
+    private String dataNasc;
+    private String especialidade;
     ArrayList<Receita> receitas = new ArrayList<>();
 
-    // início do construtor
-    public Chef(int id, String nome, String cpf, String dataNasc) {
+    public Chef(int id, String nome, String cpf, String dataNasc,String especialidade) {
+        super(nome, cpf, dataNasc);
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.dataNasc = dataNasc;
-    }
-    // fim do construtor
-
-    public void adicionarReceita(Receita Receita) {
-        this.receitas.add(Receita);
+        this.especialidade = especialidade;
     }
 
-    public void adicionarReceita(int idReceita, String nomeReceita, String etapas, int numeroEtapas) {
-        // Adicionar receita(receita)
-        Receita receita = new Receita(idReceita, nomeReceita, etapas, numeroEtapas);
-        this.receitas.add(receita);
-    }
-
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getId() {
+    public int getId() {
         return this.id;
     }
 
@@ -60,12 +51,51 @@ public class Chef {
         return this.dataNasc;
     }
 
+
+    public String getEspecialidade() {
+        return this.especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
     public void setReceita(Receita receitas) {
         this.receitas.add(receitas);
     }
 
-    public ArrayList<Receita> getReceita() {
-        return this.receitas;
+    public void adicionarReceita(int idreceita, String nome, String etapas, int numeroEtapas, String valor) {
+        Receita receita = new Receita(idreceita, nome, etapas, numeroEtapas, valor);
+        this.receitas.add(receita);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Chef)) {
+            return false;
+        }
+        Chef chef = (Chef) o;
+        return Objects.equals(id, chef.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            " Nome = '" + getNome() + "'" +
+            " CPF = '" + getCpf() + "'" +
+            " Data de Nascimento = '" + getDataDeNascimento() + "'" +
+            "}";
+    }
+
+    public String carteira() {
+        return super.carteira()
+            + "\nEspecialidade: " + this.getEspecialidade();
+    }
 }

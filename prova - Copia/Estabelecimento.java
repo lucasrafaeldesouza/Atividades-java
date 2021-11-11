@@ -7,15 +7,6 @@ public class Estabelecimento {
     private String dataAbertura;
     private Endereco endereco; 
 
-   /*
-    int id;
-    int cep;
-    String rua;
-    int numero;
-    String bairro;
-    String cidade;
-    */
-
     protected Estabelecimento(int id, String nome, String dataAbertura, int idEndereco, int cep, String rua, int numero,String bairro,String cidade) {
         this.id = id;
         this.nome = nome;

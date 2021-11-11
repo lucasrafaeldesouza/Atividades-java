@@ -20,16 +20,38 @@ public class SistemaPrincipal {
         System.out.println(padariaTres.nome);
 
         // Criando receitas para adicionar em chef e padaria
-        Receita receitaUm = new Receita(20, "Pao","Coloque em uma vasilha os ingredientes, misture bem e depois leve ao forno", 3);
-        Receita receitaDois = new Receita(25, "bolinho de chuva","misture trigo, açúcar e leve para a panela para fritar", 2);
-        Receita receitaTres = new Receita(30, "coxinha", "leve ao microondas e esquente", 1);
+        Receita receitaUm = new Receita(20, "Pao","Coloque em uma vasilha os ingredientes, misture bem e depois leve ao forno", 3,"R$0,50");
+        Receita receitaDois = new Receita(25, "bolinho de chuva","misture trigo, açúcar e leve para a panela para fritar", 2,"R$1,50");
+        Receita receitaTres = new Receita(30, "coxinha", "leve ao microondas e esquente", 1,"R$3,50");
+        Receita receitaQuatro = new Receita(35, "pao de queijo", "leve ao forno e esquente", 1,"R$2,50");
+        Receita receitaCinco = new Receita(40, "risoles", "coloque recheio na massa e frite", 2,"R$3,00");
+        Receita receitaSeis = new Receita(45, "churros", "frite os churros em uma panela com oleo", 1,"R$2,00");
+        Receita receitaSete = new Receita(50, "bolo de pote","coloque recheio dentro de um bolo e depois coloque no pote", 2,"R$6,50");
+        Receita receitaOito = new Receita(55, "bolo caseiro", "misture os ingredientes e depois leve ao forno", 2,"R$10,00");
+        Receita receitaNove = new Receita(60, "mini pizza", "coloque os ingredientes em uma massa e leve ao forno", 2,"R$5,50");
+        Receita receitaDez = new Receita(70,"pudim","colocar em uma panela com acucar",1,"R$4,75");
+        Receita receitaOnze = new Receita(80,"orelha de gato","misturar os ingredientes e colocar no forno",2,"R$1,50");
+        Receita receitaDoze = new Receita(90,"chineque","misturar farofa em um pão",1,"R$2,75");
 
-        Receita receitaQuatro = new Receita(35, "pao de queijo", "leve ao forno e esquente", 1);
-        Receita receitaCinco = new Receita(40, "risoles", "coloque recheio na massa e frite", 2);
-        Receita receitaSeis = new Receita(45, "churros", "frite os churros em uma panela com oleo", 1);
-        Receita receitaSete = new Receita(50, "bolo de pote","coloque recheio dentro de um bolo e depois coloque no pote", 2);
-        Receita receitaOito = new Receita(55, "bolo caseiro", "misture os ingredientes e depois leve ao forno", 2);
-        Receita receitaNove = new Receita(60, "mini pizza", "coloque os ingredientes em uma massa e leve ao forno", 2);
+
+        Receita receitaTreze = new Receita(100,"Vitamina","Bater tudo no liquidificador e acrescentar gelo picado.",3,"R$6,00");
+        Receita receitaQuatorze = new Receita(110,"Suco de Laranja","Misture tudo em 1 jarra de água gelada.",2,"R$4,50");
+        Receita receitaQuinze = new Receita(120,"Bolo de Fubá","Em um liquidificador, adicione os ovos, o açúcar, o fubá, a farinha de trigo, o óleo, o leite e o fermento",3,"R$8,00");
+        Receita receitaDezesseis = new Receita(130,"Café c/leite"," Bata todos os ingredientes na batedeira por 15 a 20 minutos até virar uma pasta cremosa",3,"R$2,50");
+        Receita receitaDezessete = new Receita(140,"Pão de Hambúrguer","Em uma vasilha, misture 250g da farinha de trigo, o fermento e o sal.",8,"R$3,20");
+        Receita receitaDezoito = new Receita(150,"Café","Em um suporte para filtro, coloque o filtro de papel e o pó.",3,"R$1,50");
+
+
+
+        //criando os três clientes
+        Cliente clienteUm = new Cliente("Caleb Samuel Leonardo Freitas","101.977.364-24","17/11/1989","2014-8854");
+        Cliente clienteDois = new Cliente("Natália Giovana Ana da Mota","33.476.923-1","27/10/1958","2719-0917");
+        Cliente clienteTres = new Cliente("Sérgio Ryan Lucca da Cunha","987.859.115-85","06/06/1963","1707-9665");
+
+        //criando os três 
+        Mercados mercadoUm = new Mercados(400,"Angeloni","01/01/1998","Carnes em promoção","1935","89204-080","Rua João Colin",2800,"Saguaçu","Joinville-SC");
+        Mercados mercadoDois = new Mercados(500,"Giassi","06/08/1978","Refrigerantes em promoção","4002","89211-321","Rua Orestes Guimarães",315,"Centro","Joinville-SC");
+        Mercados mercadoTres = new Mercados(600,"Condor","11/08/2000","Frutas em promoção","8922","89278-020","Rua Blumenau",715,"Atiradores","Joinville-SC");
 
         chefUm.adicionarReceita(receitaUm);
         chefUm.adicionarReceita(receitaDois);

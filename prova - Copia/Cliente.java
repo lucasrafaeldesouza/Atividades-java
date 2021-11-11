@@ -44,25 +44,18 @@ public class Cliente extends Pessoa {
         return Objects.hash(telefone);
     }
 
-/*
- public Receita(int id, String nome, String etapas, int numeroEtapas) {
+    @Override
+    public String toString() {
+        return "{" +
+            " Nome = '" + getNome() + "'" +
+            " CPF = '" + getCpf() + "'" +
+            " Data de Nascimento = '" + getDataDeNascimento() + "'" +
+            "}";
+        }
 
-        this.id = id;
-        this.nome = nome;
-        this.etapas = etapas;
-        this.numeroEtapas = numeroEtapas;
-
-    }
-
-*/
-
-@Override
-public String toString() {
-    return "{" +
-        " Nome = '" + getNome() + "'" +
-        " CPF = '" + getCpf() + "'" +
-        " Data de Nascimento = '" + getDataDeNascimento() + "'" +
-        "}";
+    public String carteira() {
+        return super.carteira()
+            + "\nTelefone: " + this.getTelefone();
     }
 
 }

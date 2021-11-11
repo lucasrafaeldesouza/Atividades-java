@@ -17,8 +17,6 @@ public class Mercado extends Estabelecimento {
         int numero,
         String bairro,
         String cidade
-
-
     ) {
         super(id, nome, dataAbertura, idEndereco, cep, rua, numero, bairro,cidade);
         this.promocoes = promocoes;
@@ -36,8 +34,8 @@ public class Mercado extends Estabelecimento {
         this.receitas.add(receita);    
     }
  
-    public void adicionarReceita(int id, String nome, String etapas, int numeroEtapas) {
-        Receita receita = new Receita(id, nome, etapas, numeroEtapas);
+    public void adicionarReceita(int idreceita, String nome, String etapas, int numeroEtapas, String valor) {
+        Receita receita = new Receita(idreceita, nome, etapas, numeroEtapas, valor);
         this.receitas.add(receita);
     }
 

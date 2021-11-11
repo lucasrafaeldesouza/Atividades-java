@@ -35,7 +35,7 @@ public class Endereco {
         return this.cep;
     }
 
-    public void setCpf(int cep) {
+    public void setCep(int cep) {
         this.cep = cep;
     }   
 
@@ -70,6 +70,14 @@ public class Endereco {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }  
+
+    public Estabelecimento getEstabelecimento() {
+        return this.estabelecimento;
+    }
+
+    public void setEstabelecimento(Estabelecimento estabelecimento) {
+        this.estabelecimento = estabelecimento;
+    }
 
     @Override
     public boolean equals(Object o) {
