@@ -37,9 +37,9 @@ public class SistemaPrincipal {
         Cliente clienteTres = new Cliente("Sérgio Ryan Lucca da Cunha","987.859.115-85","06/06/1963","1707-9665");
 
         //criando os três 
-        Mercado mercadoUm = new Mercado(400,"Angeloni","01/01/1998","Carnes em promoção","1935","89204-080","Rua João Colin",2800,"Saguaçu","Joinville-SC");
-        Mercado mercadoDois = new Mercado(500,"Giassi","06/08/1978","Refrigerantes em promoção","4002","89211-321","Rua Orestes Guimarães",315,"Centro","Joinville-SC");
-        Mercado mercadoTres = new Mercado(600,"Condor","11/08/2000","Frutas em promoção","8922","89278-020","Rua Blumenau",715,"Atiradores","Joinville-SC");
+        Mercado mercadoUm = new Mercado(400,"Economia","11/04/2001","Promocao pague 2 leve 3","2011","89204-080","Rua piratuba",3600,"boa vista","Garuva");
+        Mercado mercadoDois = new Mercado(500,"Grão para","07/02/1951","Na compra de um abacaxi o segundo voce leva de graca","1003","89211-321","Rua Orestes Guimarães",315,"Centro","Joinville-SC");
+        Mercado mercadoTres = new Mercado(600,"Benvenutti","15/05/2001","Churrasco em promocao no corredor quatro","9841","89278-020","Rua Blumenau",715,"Atiradores","Joinville-SC");
 
         chefUm.adicionarReceita(receitaUm);
         chefUm.adicionarReceita(receitaDois);
