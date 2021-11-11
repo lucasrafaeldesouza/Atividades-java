@@ -10,7 +10,7 @@ public class Chef extends Pessoa {
     private String especialidade;
     ArrayList<Receita> receitas = new ArrayList<>();
 
-    public Chef(int id, String nome, String cpf, String dataNasc,String especialidade) {
+    public Chef(int id, String nome, String cpf, String dataNasc, String especialidade) {
         super(nome, cpf, dataNasc);
         this.id = id;
         this.nome = nome;
@@ -51,7 +51,6 @@ public class Chef extends Pessoa {
         return this.dataNasc;
     }
 
-
     public String getEspecialidade() {
         return this.especialidade;
     }
@@ -87,15 +86,14 @@ public class Chef extends Pessoa {
 
     @Override
     public String toString() {
-        return "{" +
-            " Nome = '" + getNome() + "'" +
-            " CPF = '" + getCpf() + "'" +
-            " Data de Nascimento = '" + getDataDeNascimento() + "'" +
-            "}";
+        return "{" + " Nome = '" + getNome() + "'" + " CPF = '" + getCpf() + "'" + " Data de Nascimento = '"
+                + getDataDeNascimento() + "'" + "}";
     }
 
     public String carteira() {
-        return super.carteira()
-            + "\nEspecialidade: " + this.getEspecialidade();
+        return super.carteira() + "\nEspecialidade: " + this.getEspecialidade();
+    }
+
+    public void adicionarReceita(Receita receitaUm) {
     }
 }
