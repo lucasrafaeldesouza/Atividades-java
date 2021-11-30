@@ -2,9 +2,9 @@ public class SistemaPrincipal {
     public static void main(String[] args) {
 
         // criando os três chefes
-        Chef chefUm = new Chef(1, "Lucas", "10053074904", "15/05/2001", "doces e salgados");
-        Chef chefDois = new Chef(2, "Rafael", "10053074905", "15/05/2002", "massas e carnes");
-        Chef chefTres = new Chef(3, "Souza", "10053074906", "15/05/2003", "comidas asiaticas");
+        Chef chefUm = new Chef(1, "Lucas", "10053074904", "15/05/2001", "doces e salgados","R$1200");
+        Chef chefDois = new Chef(2, "Rafael", "10053074905", "15/05/2002", "massas e carnes","R$2000");
+        Chef chefTres = new Chef(3, "Souza", "10053074906", "15/05/2003", "comidas asiaticas","R$3750");
 
         // criando nome da padaria e endereco
         Padaria padariaUm = new Padaria(1, "Padaria Pao Doce Pao", "05/11/2001",1, 89200105, "Rua olinda", 746,"Guanabara", "Porto Alegre","06:00 | 20:00");

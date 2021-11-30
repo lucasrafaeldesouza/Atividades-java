@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Estabelecimento {
+public abstract class Estabelecimento {
     
     private int id;
     private String nome;

@@ -8,15 +8,18 @@ public class Chef extends Pessoa {
     private String cpf;
     private String dataNasc;
     private String especialidade;
+    private String salario;
     ArrayList<Receita> receitas = new ArrayList<>();
+    
 
-    public Chef(int id, String nome, String cpf, String dataNasc, String especialidade) {
+    public Chef(int id, String nome, String cpf, String dataNasc, String especialidade, String salario) {
         super(nome, cpf, dataNasc);
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.dataNasc = dataNasc;
         this.especialidade = especialidade;
+        this.salario = salario;
     }
 
     public void setId(int id) {
@@ -25,6 +28,14 @@ public class Chef extends Pessoa {
 
     public int getId() {
         return this.id;
+    }
+
+    public void setSalario(String salario ) {
+        this.salario = salario;
+    }
+
+    public String getSalario() {
+        return this.salario;
     }
 
     public void setNome(String nome) {
@@ -89,11 +100,21 @@ public class Chef extends Pessoa {
         return "{" + " Nome = '" + getNome() + "'" + " CPF = '" + getCpf() + "'" + " Data de Nascimento = '"
                 + getDataDeNascimento() + "'" + "}";
     }
-
+/*
     public String carteira() {
         return super.carteira() + "\nEspecialidade: " + this.getEspecialidade();
     }
-
+*/
     public void adicionarReceita(Receita receitaUm) {
     }
+
+
+    public String carteira() {
+        
+        return "\n Nome: " + this.getNome()
+        + "\n cpf: " + this.getCpf()
+        + "\n dataNasc: " + this.getDataNasc()
+        + "\n salario: " + this.getSalario();
+    } 
+
 }

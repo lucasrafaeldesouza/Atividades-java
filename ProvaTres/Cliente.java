@@ -52,10 +52,18 @@ public class Cliente extends Pessoa {
             " Data de Nascimento = '" + getDataDeNascimento() + "'" +
             "}";
         }
+        /*
+            public String carteira() {
+                return super.carteira()
+                    + "\nTelefone: " + this.getTelefone();
+            }
+        */
 
-    public String carteira() {
-        return super.carteira()
-            + "\nTelefone: " + this.getTelefone();
-    }
+        public String carteira() {
+            return "\nTelefone: " + this.getTelefone();
+        }
+
+
+
 
 }

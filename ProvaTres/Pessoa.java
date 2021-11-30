@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Pessoa {
+public abstract class Pessoa {
     private String nome;
     private String cpf;
     private String dataDeNascimento;
@@ -61,9 +61,14 @@ public class Pessoa {
             "}";
     }
 
+    /*
     public String carteira() {
         return "Nome: " + this.getNome()
             + "\nCPF: " + this.getCpf()
             + "\nData de Nascimento: " + this.getDataDeNascimento();
     }
+    */
+
+    public abstract String carteira();
+
 }
