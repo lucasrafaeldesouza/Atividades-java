@@ -565,7 +565,7 @@ public class SistemaPrincipal {
                         System.out.println("\n");
 
                     case 4:
-                        System.out.println("\n\n Obrigado por usar o programa ");
+                        System.out.println("\n\n FIM DO PROGRAMA ");
                         break;
                 }
 
