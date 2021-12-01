@@ -392,7 +392,7 @@ public class SistemaPrincipal {
                                     break;
 
                                 case 5:
-                                    System.out.println("\n\n BYE BYE ");
+                                    System.out.println("\n\n fim do programa ");
                                     break;
                             }
                         } while (escolhaCliente != 5);
@@ -408,7 +408,7 @@ public class SistemaPrincipal {
                         PreparedStatement preparedStatement4 = conct.prepareStatement("SELECT * FROM cliente");
                         ResultSet result = preparedStatement4.executeQuery();
                         while (result.next()) {
-                            System.out.printf(" Cliente ");
+                            System.out.printf(" - Cliente ");
                             Cliente cliente = new Cliente(
                                     result.getInt("IdCliente"),
                                     result.getString("nome"),
@@ -421,7 +421,7 @@ public class SistemaPrincipal {
 
                         PreparedStatement preparedStatement = con.prepareStatement("SELECT * FROM chef");
                         ResultSet re = preparedStatement.executeQuery();
-                        while (result.next()) {
+                        while (re.next()) {
                             System.out.printf(" - Chef ");
                             Chef chef = new Chef(
                                     re.getInt("IdChef"),
