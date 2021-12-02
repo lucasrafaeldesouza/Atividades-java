@@ -436,52 +436,31 @@ public class SistemaPrincipal {
                         System.out.printf(" \n");
 
                         // criando nome da padaria e endereco
-                        Padaria padariaUm = new Padaria(1, "Padaria Pao Doce Pao", "05/11/2001", 1, 89200105,
-                                "Rua olinda", 746, "Guanabara", "Porto Alegre", "06:00 | 20:00");
-                        Padaria padariaDois = new Padaria(2, "Padaria Srze", "15/02/2005", 2, 89200105, "Rua paranaue",
-                                456, "Humaita", "Rio de janerio", "07:30 | 21:00");
-                        Padaria padariaTres = new Padaria(3, "Padaria ferragem", "16/04/2007", 3, 89200105,
-                                "Rua do irineu", 101, "Rocinha", "Curitiba", "08:00 | 22:00");
+                        Padaria padariaUm = new Padaria(1, "Padaria Pao Doce Pao", "05/11/2001", 1, 89200105,"Rua olinda", 746, "Guanabara", "Porto Alegre", "06:00 | 20:00");
+                        Padaria padariaDois = new Padaria(2, "Padaria Srze", "15/02/2005", 2, 89200105, "Rua paranaue",456, "Humaita", "Rio de janerio", "07:30 | 21:00");
+                        Padaria padariaTres = new Padaria(3, "Padaria ferragem", "16/04/2007", 3, 89200105,"Rua do irineu", 101, "Rocinha", "Curitiba", "08:00 | 22:00");
 
                         // Criando receitas para adicionar em chef e padaria
-                        Receita receitaUm = new Receita(20, "Pao",
-                                "Coloque em uma vasilha os ingredientes, misture bem e depois leve ao forno", 3,
-                                "R$0,50");
-                        Receita receitaDois = new Receita(25, "bolinho de chuva",
-                                "misture trigo, açúcar e leve para a panela para fritar", 2, "R$1,50");
+                        Receita receitaUm = new Receita(20, "Pao","Coloque em uma vasilha os ingredientes, misture bem e depois leve ao forno", 3,"R$0,50");
+                        Receita receitaDois = new Receita(25, "bolinho de chuva","misture trigo, açúcar e leve para a panela para fritar", 2, "R$1,50");
                         Receita receitaTres = new Receita(30, "coxinha", "leve ao microondas e esquente", 1, "R$3,50");
-                        Receita receitaQuatro = new Receita(35, "pao de queijo", "leve ao forno e esquente", 1,
-                                "R$2,50");
-                        Receita receitaCinco = new Receita(40, "risoles", "coloque recheio na massa e frite", 2,
-                                "R$3,00");
-                        Receita receitaSeis = new Receita(45, "churros", "frite os churros em uma panela com oleo", 1,
-                                "R$2,00");
-                        Receita receitaSete = new Receita(50, "bolo de pote",
-                                "coloque recheio dentro de um bolo e depois coloque no pote", 2, "R$6,50");
-                        Receita receitaOito = new Receita(55, "bolo caseiro",
-                                "misture os ingredientes e depois leve ao forno", 2, "R$10,00");
-                        Receita receitaNove = new Receita(60, "mini pizza",
-                                "coloque os ingredientes em uma massa e leve ao forno", 2, "R$5,50");
+                        Receita receitaQuatro = new Receita(35, "pao de queijo", "leve ao forno e esquente", 1,"R$2,50");
+                        Receita receitaCinco = new Receita(40, "risoles", "coloque recheio na massa e frite", 2,"R$3,00");
+                        Receita receitaSeis = new Receita(45, "churros", "frite os churros em uma panela com oleo", 1,"R$2,00");
+                        Receita receitaSete = new Receita(50, "bolo de pote","coloque recheio dentro de um bolo e depois coloque no pote", 2, "R$6,50");
+                        Receita receitaOito = new Receita(55, "bolo caseiro","misture os ingredientes e depois leve ao forno", 2, "R$10,00");
+                        Receita receitaNove = new Receita(60, "mini pizza","coloque os ingredientes em uma massa e leve ao forno", 2, "R$5,50");
                         Receita receitaDez = new Receita(70, "pudim", "colocar em uma panela com acucar", 1, "R$4,75");
-                        Receita receitaOnze = new Receita(80, "orelha de gato",
-                                "misturar os ingredientes e colocar no forno", 2, "R$1,50");
+                        Receita receitaOnze = new Receita(80, "orelha de gato","misturar os ingredientes e colocar no forno", 2, "R$1,50");
                         Receita receitaDoze = new Receita(90, "chineque", "misturar farofa em um pão", 1, "R$2,75");
-                        Receita receitaTreze = new Receita(100, "pao de mel", "colocar mel em cima de um pao", 3,
-                                "R$6,00");
-                        Receita receitaQuatorze = new Receita(110, "Suco de Laranja",
-                                "coloque o tang na agua e misture", 2, "R$4,50");
-                        Receita receitaQuinze = new Receita(120, "nega maluca",
-                                "coloque brigadeira em cima de um bolo caseiro de chocolate", 3, "R$8,00");
+                        Receita receitaTreze = new Receita(100, "pao de mel", "colocar mel em cima de um pao", 3,"R$6,00");
+                        Receita receitaQuatorze = new Receita(110, "Suco de Laranja","coloque o tang na agua e misture", 2, "R$4,50");
+                        Receita receitaQuinze = new Receita(120, "nega maluca","coloque brigadeira em cima de um bolo caseiro de chocolate", 3, "R$8,00");
 
                         // criando os três Mercado
-                        Mercado mercadoUm = new Mercado(400, "Economia", "11/04/2001", "Promocao pague 2 leve 3", 2011,
-                                899114564, "Rua piratuba", 3600, "jardim iririu", "Garuva");
-                        Mercado mercadoDois = new Mercado(500, "Rodrigues", "07/02/1951",
-                                "Na compra de um abacaxi o segundo voce leva de graca", 1003, 85546555,
-                                "Rua Pedro sampaio", 315, "cruzeiro", "Santo andre");
-                        Mercado mercadoTres = new Mercado(600, "Benvenutti", "15/05/2001",
-                                "Churrasco em promocao no corredor quatro", 9841, 55512346, "Rua uruguaiana", 715,
-                                "santo amaro", "Minas gerais");
+                        Mercado mercadoUm = new Mercado(400, "Economia", "11/04/2001", "Promocao pague 2 leve 3", 2011,899114564, "Rua piratuba", 3600, "jardim iririu", "Garuva");
+                        Mercado mercadoDois = new Mercado(500, "Rodrigues", "07/02/1951","Na compra de um abacaxi o segundo voce leva de graca", 1003, 85546555,"Rua Pedro sampaio", 315, "cruzeiro", "Santo andre");
+                        Mercado mercadoTres = new Mercado(600, "Benvenutti", "15/05/2001","Churrasco em promocao no corredor quatro", 9841, 55512346, "Rua uruguaiana", 715,"santo amaro", "Minas gerais");
 
                         padariaUm.adicionarReceita(receitaUm);
                         padariaUm.adicionarReceita(receitaDois);
