@@ -108,10 +108,7 @@ public class SistemaPrincipal {
                                     Statement statement = con.createStatement();
                                     // INSERT INTO chef (id, nome, cpf, dataNasc, especialidade, salario) VALUES (1,
                                     // 'Lucas')
-                                    statement.executeUpdate(
-                                            "INSERT INTO chef (IdChef, nome, cpf, dataNasc, especialidade,salario) VALUES ("
-                                                    + IdChef + ",'" + nome + "','" + cpf + "','" + dataNasc + "','"
-                                                    + especialidade + "'," + salario + ")");
+                                    statement.executeUpdate("INSERT INTO chef (IdChef, nome, cpf, dataNasc, especialidade,salario) VALUES ("+ IdChef + ",'" + nome + "','" + cpf + "','" + dataNasc + "','"+ especialidade + "'," + salario + ")");
                                     System.out.println("CADASTRADO REALIZADO COM SUCESSSO!");
                                     break;
 
@@ -159,9 +156,8 @@ public class SistemaPrincipal {
                                     } catch (Exception e) {
                                         System.out.println(e.getMessage());
                                     }
-                                    PreparedStatement preparedStatement2 = con.prepareStatement(
-                                            "UPDATE chef SET nome = ?, cpf = ?, dataNasc = ?, especialidade = ?, salario = ? WHERE IdChef = ?",
-                                            PreparedStatement.RETURN_GENERATED_KEYS);
+                                    PreparedStatement preparedStatement2 = con.prepareStatement("UPDATE chef SET nome = ?, cpf = ?, dataNasc = ?, especialidade = ?, salario = ? WHERE IdChef = ?",
+                                    PreparedStatement.RETURN_GENERATED_KEYS);
                                     preparedStatement2.setString(1, nome);
                                     preparedStatement2.setString(2, cpf);
                                     preparedStatement2.setDate(3, Date.valueOf(dataNasc));
@@ -184,9 +180,8 @@ public class SistemaPrincipal {
                                     } catch (Exception e) {
                                         System.out.println(e.getMessage());
                                     }
-                                    PreparedStatement preparedStatement3 = con.prepareStatement(
-                                            "DELETE FROM chef WHERE IdChef = ? ",
-                                            PreparedStatement.RETURN_GENERATED_KEYS);
+                                    PreparedStatement preparedStatement3 = con.prepareStatement("DELETE FROM chef WHERE IdChef = ? ",
+                                    PreparedStatement.RETURN_GENERATED_KEYS);
                                     preparedStatement3.setInt(1, IdChef);
 
                                     if (preparedStatement3.executeUpdate() <= 0) {
@@ -204,9 +199,8 @@ public class SistemaPrincipal {
                                         System.out.println(e.getMessage());
                                     }
 
-                                    PreparedStatement preparedStatement4 = con.prepareStatement(
-                                            "SELECT * FROM chef WHERE IdChef = ? ",
-                                            PreparedStatement.RETURN_GENERATED_KEYS);
+                                    PreparedStatement preparedStatement4 = con.prepareStatement("SELECT * FROM chef WHERE IdChef = ? ",
+                                    PreparedStatement.RETURN_GENERATED_KEYS);
                                     preparedStatement4.setInt(1, IdChef);
                                     ResultSet result = preparedStatement4.executeQuery();
                                     while (result.next()) {
@@ -287,10 +281,7 @@ public class SistemaPrincipal {
                                     }
 
                                     Statement statement = con.createStatement();
-                                    statement.executeUpdate(
-                                            "INSERT INTO cliente (IdCliente, nome, telefone, cpf, dataDeNascimento) VALUES ("
-                                                    + IdCliente + ",'" + nome + "','" + telefone + "','" + cpf + "','"
-                                                    + dataDeNascimento + "')");
+                                    statement.executeUpdate("INSERT INTO cliente (IdCliente, nome, telefone, cpf, dataDeNascimento) VALUES ("+ IdCliente + ",'" + nome + "','" + telefone + "','" + cpf + "','"+ dataDeNascimento + "')");
                                     System.out.println("CADASTRADO REALIZADO COM SUCESSSO!");
                                     break;
 
@@ -331,9 +322,8 @@ public class SistemaPrincipal {
                                     } catch (Exception e) {
                                         System.out.println(e.getMessage());
                                     }
-                                    PreparedStatement preparedStatement2 = con.prepareStatement(
-                                            "UPDATE cliente SET nome = ?, telefone = ?, cpf = ?, dataDeNascimento = ? WHERE IdCliente = ?",
-                                            PreparedStatement.RETURN_GENERATED_KEYS);
+                                    PreparedStatement preparedStatement2 = con.prepareStatement("UPDATE cliente SET nome = ?, telefone = ?, cpf = ?, dataDeNascimento = ? WHERE IdCliente = ?",
+                                    PreparedStatement.RETURN_GENERATED_KEYS);
                                     preparedStatement2.setString(1, nome);
                                     preparedStatement2.setString(2, telefone);
                                     preparedStatement2.setString(3, cpf);
@@ -355,9 +345,8 @@ public class SistemaPrincipal {
                                     } catch (Exception e) {
                                         System.out.println(e.getMessage());
                                     }
-                                    PreparedStatement preparedStatement3 = con.prepareStatement(
-                                            "DELETE FROM cliente WHERE IdCliente = ? ",
-                                            PreparedStatement.RETURN_GENERATED_KEYS);
+                                    PreparedStatement preparedStatement3 = con.prepareStatement("DELETE FROM cliente WHERE IdCliente = ? ",
+                                    PreparedStatement.RETURN_GENERATED_KEYS);
                                     preparedStatement3.setInt(1, IdCliente);
 
                                     if (preparedStatement3.executeUpdate() <= 0) {
@@ -375,9 +364,8 @@ public class SistemaPrincipal {
                                         System.out.println(e.getMessage());
                                     }
 
-                                    PreparedStatement preparedStatement4 = con.prepareStatement(
-                                            "SELECT * FROM cliente WHERE IdCliente = ? ",
-                                            PreparedStatement.RETURN_GENERATED_KEYS);
+                                    PreparedStatement preparedStatement4 = con.prepareStatement("SELECT * FROM cliente WHERE IdCliente = ? ",
+                                    PreparedStatement.RETURN_GENERATED_KEYS);
                                     preparedStatement4.setInt(1, IdCliente);
                                     ResultSet result = preparedStatement4.executeQuery();
                                     while (result.next()) {
